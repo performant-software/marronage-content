@@ -1,0 +1,70 @@
+{
+  "detail_pages": {
+    "events": true,
+    "items": true,
+    "places": true
+  },
+  "branding": {
+    "footer_login": true
+  },
+  "content": {
+    "collections": ["paths", "posts"]
+  },
+  "core_data": {
+    "url": "https://staging.coredata.cloud",
+    "project_ids": ["PLACEHOLDER_PROJECT_ID"]
+  },
+  "i18n": {
+    "default_locale": "en",
+    "locales": ["en"]
+  },
+  "layers": [
+    {
+      "name": "Base Map",
+      "layer_type": "vector",
+      "url": "https://api.maptiler.com/maps/dataviz/style.json?key=PLACEHOLDER_MAPTILER_KEY"
+    }
+  ],
+  "search": [
+    {
+      "name": "settlements",
+      "route": "/settlements",
+      "type": "map",
+      "geosearch": true,
+      "map": {
+        "geometry": "geometry",
+        "max_zoom": 14,
+        "zoom_to_place": true
+      },
+      "result_card": {
+        "title": "name",
+        "attributes": [
+          "PLACEHOLDER_UDF_COUNTRY_facet",
+          "PLACEHOLDER_UDF_STATE_facet",
+          "PLACEHOLDER_UDF_ACCURACY_facet"
+        ]
+      },
+      "timeline": {
+        "date_range_facet": "event_range_facet",
+        "event_path": "PLACEHOLDER_EVENTS_REL_UUID"
+      },
+      "typesense": {
+        "host": "PLACEHOLDER_TYPESENSE_HOST",
+        "port": 443,
+        "protocol": "https",
+        "api_key": "PLACEHOLDER_TYPESENSE_API_KEY",
+        "index_name": "marronage_settlements",
+        "query_by": "name",
+        "default_sort": "name",
+        "facets": {
+          "include": [
+            "PLACEHOLDER_UDF_COUNTRY_facet",
+            "PLACEHOLDER_UDF_STATE_facet",
+            "PLACEHOLDER_UDF_ACCURACY_facet",
+            "PLACEHOLDER_GROUP_TYPE_facet"
+          ]
+        }
+      }
+    }
+  ]
+}

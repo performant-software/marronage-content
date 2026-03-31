@@ -1,0 +1,11 @@
+{
+  "title": "Marronage Mapping Project",
+  "font_header": "Georgia",
+  "font_body": "system-ui",
+  "primary_color": "#2C5F2D",
+  "secondary_color": "#97BC62",
+  "footer": {
+    "allow_login": true,
+    "logos": []
+  }
+}
