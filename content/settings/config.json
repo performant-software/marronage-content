@@ -30,6 +30,7 @@
       "geosearch": true,
       "map": {
         "geometry": "geometry",
+        "properties": "properties",
         "max_zoom": 14,
         "zoom_to_place": true
       },
