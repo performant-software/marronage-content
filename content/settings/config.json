@@ -1,18 +1,15 @@
 {
   "detail_pages": {
-    "events": true,
-    "items": true,
-    "places": true
-  },
-  "branding": {
-    "footer_login": true
+    "models": {
+      "places": {}
+    }
   },
   "content": {
-    "collections": ["paths", "posts"]
+    "collections": []
   },
   "core_data": {
     "url": "https://staging.coredata.cloud",
-    "project_ids": ["PLACEHOLDER_PROJECT_ID"]
+    "project_ids": ["237"]
   },
   "i18n": {
     "default_locale": "en",
@@ -20,15 +17,15 @@
   },
   "layers": [
     {
-      "name": "Base Map",
+      "name": "Maptiler DataViz Style",
       "layer_type": "vector",
-      "url": "https://api.maptiler.com/maps/dataviz/style.json?key=PLACEHOLDER_MAPTILER_KEY"
+      "url": "https://api.maptiler.com/maps/dataviz/style.json?key=DICl11L0kocVzMWdoynh"
     }
   ],
   "search": [
     {
       "name": "settlements",
-      "route": "/settlements",
+      "route": "/places",
       "type": "map",
       "geosearch": true,
       "map": {
@@ -39,29 +36,47 @@
       "result_card": {
         "title": "name",
         "attributes": [
-          "PLACEHOLDER_UDF_COUNTRY_facet",
-          "PLACEHOLDER_UDF_STATE_facet",
-          "PLACEHOLDER_UDF_ACCURACY_facet"
+          {
+            "name": "1a8e98a5-083a-4e99-9ae4-95c08125da9a.0.name"
+          },
+          {
+            "name": "7614889f-3737-4fcb-a3f3-780bef9164c2.0.name"
+          },
+          {
+            "name": "63e2b256-a5af-43d3-b052-56872ce351ef.0.name"
+          }
         ]
       },
+      "facets": [
+        {
+          "name": "1a8e98a5-083a-4e99-9ae4-95c08125da9a.name_facet",
+          "type": "list"
+        },
+        {
+          "name": "7614889f-3737-4fcb-a3f3-780bef9164c2.name_facet",
+          "type": "list"
+        },
+        {
+          "name": "63e2b256-a5af-43d3-b052-56872ce351ef.name_facet",
+          "type": "list"
+        }
+      ],
       "timeline": {
         "date_range_facet": "event_range_facet",
-        "event_path": "PLACEHOLDER_EVENTS_REL_UUID"
+        "event_path": "88f155dc-daf7-4fa0-8aaf-a8c7bf4ff3d4"
       },
       "typesense": {
-        "host": "PLACEHOLDER_TYPESENSE_HOST",
+        "host": "i74olkjcuy69ze2vp-1.a1.typesense.net",
         "port": 443,
         "protocol": "https",
-        "api_key": "PLACEHOLDER_TYPESENSE_API_KEY",
-        "index_name": "marronage_settlements",
+        "api_key": "WeW3geBOdU14LHGptlch4TRJzF2TMC5P",
+        "index_name": "marronage",
         "query_by": "name",
-        "default_sort": "name",
         "facets": {
           "include": [
-            "PLACEHOLDER_UDF_COUNTRY_facet",
-            "PLACEHOLDER_UDF_STATE_facet",
-            "PLACEHOLDER_UDF_ACCURACY_facet",
-            "PLACEHOLDER_GROUP_TYPE_facet"
+            "1a8e98a5-083a-4e99-9ae4-95c08125da9a.name_facet",
+            "7614889f-3737-4fcb-a3f3-780bef9164c2.name_facet",
+            "63e2b256-a5af-43d3-b052-56872ce351ef.name_facet"
           ]
         }
       }
