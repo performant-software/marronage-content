@@ -54,12 +54,12 @@
           "type": "list"
         },
         {
-          "name": "1a8e98a5-083a-4e99-9ae4-95c08125da9a.name_facet",
-          "type": "list"
+          "name": "1a8e98a5-083a-4e99-9ae4-95c08125da9a.names_facet",
+          "type": "select"
         },
         {
-          "name": "7614889f-3737-4fcb-a3f3-780bef9164c2.name_facet",
-          "type": "list"
+          "name": "7614889f-3737-4fcb-a3f3-780bef9164c2.names_facet",
+          "type": "select"
         }
       ],
       "timeline": {
@@ -76,8 +76,8 @@
         "facets": {
           "include": [
             "63e2b256-a5af-43d3-b052-56872ce351ef.name_facet",
-            "1a8e98a5-083a-4e99-9ae4-95c08125da9a.name_facet",
-            "7614889f-3737-4fcb-a3f3-780bef9164c2.name_facet"
+            "1a8e98a5-083a-4e99-9ae4-95c08125da9a.names_facet",
+            "7614889f-3737-4fcb-a3f3-780bef9164c2.names_facet"
           ]
         }
       }
