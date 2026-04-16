@@ -2,7 +2,7 @@
   "t_map": "Map",
   "t_home": "Home",
   "t_posts": "Posts",
-  "t_root": "Settlements",
-  "t_index_settlements": "Settlements",
+  "t_root": "Places",
+  "t_index_places": "Places",
   "t_index_events": "Events"
 }

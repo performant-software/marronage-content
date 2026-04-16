@@ -17,14 +17,14 @@
   },
   "layers": [
     {
-      "name": "Maptiler DataViz Style",
+      "name": "Maptiler Aquarelle",
       "layer_type": "vector",
-      "url": "https://api.maptiler.com/maps/dataviz/style.json?key=DICl11L0kocVzMWdoynh"
+      "url": "https://api.maptiler.com/maps/aquarelle-v4/style.json?key=DICl11L0kocVzMWdoynh"
     }
   ],
   "search": [
     {
-      "name": "settlements",
+      "name": "places",
       "route": "/places",
       "type": "map",
       "geosearch": true,
@@ -50,15 +50,15 @@
       },
       "facets": [
         {
+          "name": "63e2b256-a5af-43d3-b052-56872ce351ef.name_facet",
+          "type": "list"
+        },
+        {
           "name": "1a8e98a5-083a-4e99-9ae4-95c08125da9a.name_facet",
           "type": "list"
         },
         {
           "name": "7614889f-3737-4fcb-a3f3-780bef9164c2.name_facet",
-          "type": "list"
-        },
-        {
-          "name": "63e2b256-a5af-43d3-b052-56872ce351ef.name_facet",
           "type": "list"
         }
       ],
@@ -75,9 +75,67 @@
         "query_by": "name",
         "facets": {
           "include": [
+            "63e2b256-a5af-43d3-b052-56872ce351ef.name_facet",
             "1a8e98a5-083a-4e99-9ae4-95c08125da9a.name_facet",
-            "7614889f-3737-4fcb-a3f3-780bef9164c2.name_facet",
-            "63e2b256-a5af-43d3-b052-56872ce351ef.name_facet"
+            "7614889f-3737-4fcb-a3f3-780bef9164c2.name_facet"
+          ]
+        }
+      }
+    },
+    {
+      "name": "events",
+      "route": "/events",
+      "type": "map",
+      "geosearch": true,
+      "map": {
+        "geometry": "88f155dc-daf7-4fa0-8aaf-a8c7bf4ff3d4.geometry",
+        "properties": "88f155dc-daf7-4fa0-8aaf-a8c7bf4ff3d4.properties",
+        "max_zoom": 14,
+        "zoom_to_place": true
+      },
+      "result_card": {
+        "title": "name",
+        "attributes": [
+          {
+            "name": "6f918d76-167e-4c1a-9d98-97f67c2e3678.0.name"
+          },
+          {
+            "name": "6f2f945c-b52a-4c2e-b30f-82becf5d85c2.0.name"
+          },
+          {
+            "name": "d5cf5335-1c56-43f8-aeb0-500267eeac98",
+            "parser": "fuzzyDate"
+          },
+          {
+            "name": "4b9767ef-abb3-4ec7-9d0a-1da853ec8740",
+            "parser": "fuzzyDate"
+          }
+        ]
+      },
+      "facets": [
+        {
+          "name": "6f918d76-167e-4c1a-9d98-97f67c2e3678.name_facet",
+          "type": "list"
+        },
+        {
+          "name": "6f2f945c-b52a-4c2e-b30f-82becf5d85c2.name_facet",
+          "type": "list"
+        }
+      ],
+      "timeline": {
+        "date_range_facet": "start_year_facet"
+      },
+      "typesense": {
+        "host": "i74olkjcuy69ze2vp-1.a1.typesense.net",
+        "port": 443,
+        "protocol": "https",
+        "api_key": "WeW3geBOdU14LHGptlch4TRJzF2TMC5P",
+        "index_name": "marronage_events",
+        "query_by": "name",
+        "facets": {
+          "include": [
+            "6f918d76-167e-4c1a-9d98-97f67c2e3678.name_facet",
+            "6f2f945c-b52a-4c2e-b30f-82becf5d85c2.name_facet"
           ]
         }
       }
