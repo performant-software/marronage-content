@@ -129,7 +129,7 @@
         "host": "i74olkjcuy69ze2vp-1.a1.typesense.net",
         "port": 443,
         "protocol": "https",
-        "api_key": "WeW3geBOdU14LHGptlch4TRJzF2TMC5P",
+        "api_key": "r80NFqOz65D6qyu5S08H2wzDQ5dT1szK",
         "index_name": "marronage_events",
         "query_by": "name",
         "facets": {
