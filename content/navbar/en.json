@@ -18,24 +18,12 @@
           "href": "/en/pages/About-the-Project"
         },
         {
-          "label": "About the Movement",
-          "href": "/en/pages/About-the-Movement"
-        },
-        {
-          "label": "Project History",
-          "href": "/en/pages/Project-History"
-        },
-        {
           "label": "Project Team",
           "href": "/en/pages/Project-Team"
         },
         {
           "label": "Project Roadmap",
           "href": "/en/pages/Project-Roadmap"
-        },
-        {
-          "label": "Site Credits",
-          "href": "/en/pages/Site-Credits"
         }
       ],
       "_template": "Dropdown"
