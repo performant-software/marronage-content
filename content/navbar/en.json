@@ -11,6 +11,16 @@
       "_template": "URL"
     },
     {
+      "label": "Posts",
+      "href": "/en/posts",
+      "_template": "URL"
+    },
+    {
+      "label": "Paths",
+      "href": "/en/paths",
+      "_template": "URL"
+    },
+    {
       "label": "About",
       "options": [
         {
