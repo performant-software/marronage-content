@@ -1,4 +1,7 @@
 ---
+creator:
+  id: user_3BgHesCjaeEy6S5lBg3dFLZv92N
+  email: jamie@performantsoftware.com
 title: Mapping Activity Sites with Certainty Radii
 author: Marronage Team
 date: 2026-04-28T04:00:00.000Z
@@ -7,6 +10,18 @@ imageAlt: Detail of a watercolor map showing a translucent circle representing a
 ---
 
 Settlement records in the Marronage dataset fall into two categories. **Settlements** — fixed communities — have a known coordinate and appear as a single point on the map. **Activity Sites** — areas where maroon activity is documented but not localized to a specific village — appear as translucent circles whose radius reflects the documentary uncertainty for that place.
+
+<place
+  place={{
+    title: "Curarigual",
+    uuid: "83dca822-c632-41ca-89e7-5264fde11209",
+    buffer: 1
+  }}
+  title="Curarigual"
+  caption="This is a place with a radius; it doesn't render as such in a post yet though! 
+
+  Does this save?"
+/>
 
 The radii are computed per region, since the geographic scale of "the area around" a place differs across the Caribbean coast, the Venezuelan llanos, and the highlands of Jamaica. We worked with the project's data editors to define a baseline for each polygon group, then derived per-record radii from there.
 
