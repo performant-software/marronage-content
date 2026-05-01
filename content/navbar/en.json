@@ -1,14 +1,22 @@
 {
   "items": [
     {
-      "label": "Places",
-      "href": "/en/search/places",
-      "_template": "URL"
-    },
-    {
-      "label": "Events",
-      "href": "/en/search/events",
-      "_template": "URL"
+      "label": "Explore",
+      "options": [
+        {
+          "label": "Places",
+          "href": "/en/search/places"
+        },
+        {
+          "label": "Events",
+          "href": "/en/search/events"
+        },
+        {
+          "label": "Saved Searches",
+          "href": "/en/sessions/search"
+        }
+      ],
+      "_template": "Dropdown"
     },
     {
       "label": "Posts",
