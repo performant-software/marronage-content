@@ -1,0 +1,144 @@
+{
+  "detail_pages": {
+    "models": {
+      "places": {}
+    }
+  },
+  "content": {
+    "collections": ["paths", "posts"]
+  },
+  "core_data": {
+    "url": "https://app.coredata.cloud",
+    "project_ids": ["REPLACE_WITH_PROD_PROJECT_ID"]
+  },
+  "i18n": {
+    "default_locale": "en",
+    "locales": ["en"]
+  },
+  "layers": [
+    {
+      "name": "Maptiler Aquarelle",
+      "layer_type": "vector",
+      "url": "https://api.maptiler.com/maps/aquarelle-v4/style.json?key=DICl11L0kocVzMWdoynh"
+    }
+  ],
+  "search": [
+    {
+      "name": "places",
+      "route": "/places",
+      "type": "map",
+      "geosearch": true,
+      "map": {
+        "geometry": "geometry",
+        "properties": "properties",
+        "max_zoom": 14,
+        "zoom_to_place": true
+      },
+      "result_card": {
+        "title": "name",
+        "attributes": [
+          {
+            "name": "REPLACE_WITH_PROD_UDF_UUID_1.0.name"
+          },
+          {
+            "name": "REPLACE_WITH_PROD_UDF_UUID_2.0.name"
+          },
+          {
+            "name": "REPLACE_WITH_PROD_UDF_UUID_3.0.name"
+          }
+        ]
+      },
+      "facets": [
+        {
+          "name": "REPLACE_WITH_PROD_UDF_UUID_3.name_facet",
+          "type": "list"
+        },
+        {
+          "name": "REPLACE_WITH_PROD_UDF_UUID_1.names_facet",
+          "type": "select"
+        },
+        {
+          "name": "REPLACE_WITH_PROD_UDF_UUID_2.names_facet",
+          "type": "select"
+        }
+      ],
+      "timeline": {
+        "date_range_facet": "event_range_facet",
+        "event_path": "REPLACE_WITH_PROD_PLACE_EVENTS_REL_UUID"
+      },
+      "typesense": {
+        "host": "REPLACE_WITH_PROD_TYPESENSE_HOST",
+        "port": 443,
+        "protocol": "https",
+        "api_key": "REPLACE_WITH_PROD_SEARCH_KEY",
+        "index_name": "marronage_prod_places",
+        "query_by": "name",
+        "facets": {
+          "include": [
+            "REPLACE_WITH_PROD_UDF_UUID_3.name_facet",
+            "REPLACE_WITH_PROD_UDF_UUID_1.names_facet",
+            "REPLACE_WITH_PROD_UDF_UUID_2.names_facet"
+          ]
+        }
+      }
+    },
+    {
+      "name": "events",
+      "route": "/events",
+      "type": "map",
+      "geosearch": true,
+      "map": {
+        "geometry": "REPLACE_WITH_PROD_PLACE_EVENTS_REL_UUID.geometry",
+        "properties": "REPLACE_WITH_PROD_PLACE_EVENTS_REL_UUID.properties",
+        "max_zoom": 14,
+        "zoom_to_place": true
+      },
+      "result_card": {
+        "title": "name",
+        "attributes": [
+          {
+            "name": "REPLACE_WITH_PROD_UDF_UUID_4.0.name"
+          },
+          {
+            "name": "REPLACE_WITH_PROD_UDF_UUID_5.0.name"
+          },
+          {
+            "name": "REPLACE_WITH_PROD_UDF_UUID_6",
+            "parser": "fuzzyDate"
+          },
+          {
+            "name": "REPLACE_WITH_PROD_UDF_UUID_7",
+            "parser": "fuzzyDate"
+          }
+        ]
+      },
+      "facets": [
+        {
+          "name": "REPLACE_WITH_PROD_UDF_UUID_4.name_facet",
+          "type": "list"
+        },
+        {
+          "name": "REPLACE_WITH_PROD_UDF_UUID_5.name_facet",
+          "type": "list"
+        }
+      ],
+      "timeline": {
+        "date_range_facet": "start_year_facet"
+      },
+      "typesense": {
+        "host": "REPLACE_WITH_PROD_TYPESENSE_HOST",
+        "port": 443,
+        "protocol": "https",
+        "api_key": "REPLACE_WITH_PROD_SEARCH_KEY",
+        "index_name": "marronage_prod_events",
+        "query_by": "name",
+        "facets": {
+          "include": [
+            "REPLACE_WITH_PROD_UDF_UUID_4.name_facet",
+            "REPLACE_WITH_PROD_UDF_UUID_5.name_facet"
+          ]
+        }
+      }
+    }
+  ]
+}
