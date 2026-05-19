@@ -8,8 +8,8 @@
     "collections": ["paths", "posts"]
   },
   "core_data": {
-    "url": "https://staging.coredata.cloud",
-    "project_ids": ["237"]
+    "url": "https://app.coredata.cloud",
+    "project_ids": ["105"]
   },
   "i18n": {
     "default_locale": "en",
@@ -38,46 +38,46 @@
         "title": "name",
         "attributes": [
           {
-            "name": "1a8e98a5-083a-4e99-9ae4-95c08125da9a.0.name"
+            "name": "74651553-3fbf-437b-b3f2-2b600af998a6.0.name"
           },
           {
-            "name": "7614889f-3737-4fcb-a3f3-780bef9164c2.0.name"
+            "name": "f197a922-77f7-412c-a478-a8c417bd34b2.0.name"
           },
           {
-            "name": "63e2b256-a5af-43d3-b052-56872ce351ef.0.name"
+            "name": "0e72940b-0149-48d7-9db0-bed94f8363ef.0.name"
           }
         ]
       },
       "facets": [
         {
-          "name": "63e2b256-a5af-43d3-b052-56872ce351ef.name_facet",
+          "name": "0e72940b-0149-48d7-9db0-bed94f8363ef.name_facet",
           "type": "list"
         },
         {
-          "name": "1a8e98a5-083a-4e99-9ae4-95c08125da9a.names_facet",
+          "name": "74651553-3fbf-437b-b3f2-2b600af998a6.names_facet",
           "type": "select"
         },
         {
-          "name": "7614889f-3737-4fcb-a3f3-780bef9164c2.names_facet",
+          "name": "f197a922-77f7-412c-a478-a8c417bd34b2.names_facet",
           "type": "select"
         }
       ],
       "timeline": {
         "date_range_facet": "event_range_facet",
-        "event_path": "88f155dc-daf7-4fa0-8aaf-a8c7bf4ff3d4"
+        "event_path": "52cd04f7-fd76-4301-b673-a8bffe72e48a"
       },
       "typesense": {
-        "host": "i74olkjcuy69ze2vp-1.a1.typesense.net",
+        "host": "71mybas0oxp6832ip-1.a1.typesense.net",
         "port": 443,
         "protocol": "https",
-        "api_key": "WeW3geBOdU14LHGptlch4TRJzF2TMC5P",
+        "api_key": "26TG4Bc8ffBd3LiSgCRwDrIfCqEp1o3f",
         "index_name": "marronage",
         "query_by": "name",
         "facets": {
           "include": [
-            "63e2b256-a5af-43d3-b052-56872ce351ef.name_facet",
-            "1a8e98a5-083a-4e99-9ae4-95c08125da9a.names_facet",
-            "7614889f-3737-4fcb-a3f3-780bef9164c2.names_facet"
+            "0e72940b-0149-48d7-9db0-bed94f8363ef.name_facet",
+            "74651553-3fbf-437b-b3f2-2b600af998a6.names_facet",
+            "f197a922-77f7-412c-a478-a8c417bd34b2.names_facet"
           ]
         }
       }
@@ -88,8 +88,8 @@
       "type": "map",
       "geosearch": true,
       "map": {
-        "geometry": "88f155dc-daf7-4fa0-8aaf-a8c7bf4ff3d4.geometry",
-        "properties": "88f155dc-daf7-4fa0-8aaf-a8c7bf4ff3d4.properties",
+        "geometry": "52cd04f7-fd76-4301-b673-a8bffe72e48a.geometry",
+        "properties": "52cd04f7-fd76-4301-b673-a8bffe72e48a.properties",
         "max_zoom": 14,
         "zoom_to_place": true
       },
@@ -97,28 +97,28 @@
         "title": "name",
         "attributes": [
           {
-            "name": "6f918d76-167e-4c1a-9d98-97f67c2e3678.0.name"
+            "name": "79a830ca-e5bd-49a2-8ec2-1da635c4c2a5.0.name"
           },
           {
-            "name": "6f2f945c-b52a-4c2e-b30f-82becf5d85c2.0.name"
+            "name": "8ab22bfd-cd32-4a6c-8a80-9a1e47aa71b9.0.name"
           },
           {
-            "name": "d5cf5335-1c56-43f8-aeb0-500267eeac98",
+            "name": "a3b3077f-e695-42b8-824c-057a77277f76",
             "parser": "fuzzyDate"
           },
           {
-            "name": "4b9767ef-abb3-4ec7-9d0a-1da853ec8740",
+            "name": "e7e08c57-84e3-44cf-945a-2c7bef6aadca",
             "parser": "fuzzyDate"
           }
         ]
       },
       "facets": [
         {
-          "name": "6f918d76-167e-4c1a-9d98-97f67c2e3678.name_facet",
+          "name": "79a830ca-e5bd-49a2-8ec2-1da635c4c2a5.name_facet",
           "type": "list"
         },
         {
-          "name": "6f2f945c-b52a-4c2e-b30f-82becf5d85c2.name_facet",
+          "name": "8ab22bfd-cd32-4a6c-8a80-9a1e47aa71b9.name_facet",
           "type": "list"
         }
       ],
@@ -126,16 +126,16 @@
         "date_range_facet": "start_year_facet"
       },
       "typesense": {
-        "host": "i74olkjcuy69ze2vp-1.a1.typesense.net",
+        "host": "71mybas0oxp6832ip-1.a1.typesense.net",
         "port": 443,
         "protocol": "https",
-        "api_key": "r80NFqOz65D6qyu5S08H2wzDQ5dT1szK",
+        "api_key": "26TG4Bc8ffBd3LiSgCRwDrIfCqEp1o3f",
         "index_name": "marronage_events",
         "query_by": "name",
         "facets": {
           "include": [
-            "6f918d76-167e-4c1a-9d98-97f67c2e3678.name_facet",
-            "6f2f945c-b52a-4c2e-b30f-82becf5d85c2.name_facet"
+            "79a830ca-e5bd-49a2-8ec2-1da635c4c2a5.name_facet",
+            "8ab22bfd-cd32-4a6c-8a80-9a1e47aa71b9.name_facet"
           ]
         }
       }
