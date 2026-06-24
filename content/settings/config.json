@@ -108,6 +108,7 @@
       ],
       "map": {
         "geometry": "88f155dc-daf7-4fa0-8aaf-a8c7bf4ff3d4.geometry",
+        "properties": "88f155dc-daf7-4fa0-8aaf-a8c7bf4ff3d4.properties",
         "max_zoom": 14,
         "zoom_to_place": true
       },
