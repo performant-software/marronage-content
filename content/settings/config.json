@@ -28,6 +28,13 @@
       "layer_type": "vector",
       "url": "https://api.maptiler.com/maps/aquarelle-v4/style.json?key=DICl11L0kocVzMWdoynh",
       "default": false
+    },
+    {
+      "name": "Historic Map of Kingston Jamaica",
+      "layer_type": "georeference",
+      "url": "https://annotations.allmaps.org/images/96897340c4e1db3e",
+      "overlay": true,
+      "default": false
     }
   ],
   "search": [
