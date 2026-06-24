@@ -26,7 +26,8 @@
     {
       "name": "Maptiler Aquarelle",
       "layer_type": "vector",
-      "url": "https://api.maptiler.com/maps/aquarelle-v4/style.json?key=DICl11L0kocVzMWdoynh"
+      "url": "https://api.maptiler.com/maps/aquarelle-v4/style.json?key=DICl11L0kocVzMWdoynh",
+      "default": false
     }
   ],
   "search": [
@@ -51,6 +52,7 @@
       ],
       "map": {
         "geometry": "geometry",
+        "properties": "properties",
         "max_zoom": 14,
         "zoom_to_place": true
       },
