@@ -2,8 +2,15 @@
   "title": "Cimarrón Geographies Project",
   "font_header": "Georgia",
   "font_body": "system-ui",
-  "primary_color": "#2C5F2D",
-  "secondary_color": "#97BC62",
+  "primary_color": "#192B03",
+  "secondary_color": "#417505",
+  "tertiary_color": "#84A166",
+  "content_color": "#040404",
+  "content_alternate": "#FFFFFF",
+  "content_inverse": "#FFFFFF",
+  "header": {
+    "hide_title": false
+  },
   "footer": {
     "allow_login": true,
     "logos": []
